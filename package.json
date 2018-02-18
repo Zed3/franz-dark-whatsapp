@@ -1,0 +1,13 @@
+{
+  "id": "whatsappdark",
+  "name": "WhatsApp Dark",
+  "version": "1.0.0",
+  "description": "WhatsApp Dark Theme",
+  "main": "index.js",
+  "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "license": "Apache 2.0",
+  "config": {
+    "serviceURL": "https://web.whatsapp.com",
+    "hasNotificationSound": true
+  }
+}
