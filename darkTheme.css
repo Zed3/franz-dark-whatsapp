@@ -495,8 +495,12 @@ html[dir="ltr"] .UPNDG:hover:not(._1xQmx) {
 }
 
 /* Message bubbles. */
-.message-in,
-.message-out,
+.message-in{
+  background-color: var(--darker) !important;
+}
+.message-out{
+  background-color: #303642 !important;
+}
 .message {
   background-color: var(--darker) !important;
 }
@@ -506,6 +510,9 @@ html[dir="ltr"] .UPNDG:hover:not(._1xQmx) {
 .message .quoted-mention,
 .message ._1upWv {
   color: var(--light) !important;
+}
+._3zb-j a{
+  color: var(--mblue) !important;
 }
 /* Message meta text color. */
 [class*="message-"] ._2f-RV *,
@@ -659,6 +666,9 @@ html[dir="ltr"] .UPNDG:hover:not(._1xQmx) {
 }
 
 /* Bubble tails -- experimental. */
+.tail-container{
+  display: none !important;
+}
 .tail .tail-container {
   width: 0px !important;
   height: 12px !important;
@@ -671,21 +681,29 @@ html[dir="ltr"] .UPNDG:hover:not(._1xQmx) {
 .tail.message-in .tail-container {
   left: -10px;
   top: 0px;
-  border-left: 12px solid transparent;
-  border-radius: 4px 0 0 0;
+  border:0px !important;
+  
 }
 .tail.message-out .tail-container {
   right: -10px;
   top: 0px;
-  border-right: 12px solid transparent;
-  border-radius: 0 4px 0 0;
+  border:0px !important;
+  
 }
-
+.tail.message-in,
+.tail.message-out{
+  border-radius:4px !important;
+}
 /* Disable tails everywhere except in chat. */
 .starred-msg-wrapper .tail-container,
 .message-gallery .tail-container,
-.MS-DH .tail-container {
+.MS-DH .tail-container,
+.tail-container .highlight {
   display: none !important;
+}
+.tail.message-out .tail-container,
+.tail.message-in .tail-container{
+  border:0px !important;
 }
 /* Rounded corners. */
 .message-gallery.tail-override-left,
@@ -963,4 +981,12 @@ span[data-icon="audio-file"] svg path {
 /* App-loaded animation. */
 html[dir="ltr"] ._3dqpi {
   animation: _104Un 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.38);
+}
+
+._1i1U7{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--accent) 50%) !important;
+  border-radius: 4px !important;
+}
+span[data-icon="down-context"] svg path{
+  fill-opacity: 1 !important;
 }
