@@ -1,7 +1,6 @@
 'use strict';
 
 const path = require('path');
-const theme = require('./theme');
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
@@ -21,8 +20,7 @@ module.exports = Franz => {
   // inject franz.css stylesheet
   Franz.injectCSS(path.join(__dirname, 'service.css'));
   
-  theme('darkTheme');
-
+Franz.injectCSS(path.join(__dirname, 'darkTheme.css'));
   // check for new messages every second and update Franz badge
   Franz.loop(getMessages);
 };
