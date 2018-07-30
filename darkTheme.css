@@ -438,6 +438,12 @@ _1ArIP div {
     background-color: var(--darker) !important;
 }
 
+._1Iexl #main footer ._3pkkz ._1Plpp {
+    border: none !important;
+    color: var(--light);
+    background-color: var(--dark) !important;
+}
+
 
 /* Hide 'Type a message' once focused. */
 
